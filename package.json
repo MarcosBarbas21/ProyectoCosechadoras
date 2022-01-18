@@ -1,0 +1,58 @@
+{
+  "name": "infotrak",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start:dev": "webpack server",
+    "build": "babel src/index.js -d dist",
+    "start": "parcel index.html",
+    "parse": "node parse.js",
+    "index": "node src/index.js",
+    "regex": "node src/regex.js",
+    "maps": "node map.js",
+    "coordinates": "node src/coordinates.js",
+    "leaflet": "node src/leaflet.js",
+    "main": "node src/main.js",
+    "web": "live-server src/index.html",
+    "newMap": "node newMap.js"
+  },
+  "author": "Marcos Ireneo Barbas <barbasmarcosi@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "parcel-bundler": "^1.12.5",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
+  },
+  "dependencies": {
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "esm": "^3.2.25",
+    "file": "^0.2.2",
+    "fs": "^0.0.1-security",
+    "https-browserify": "^1.0.0",
+    "leaflet": "^1.7.1",
+    "live-server": "^1.2.1",
+    "lodash": "^4.17.21",
+    "mailgun": "^0.5.0",
+    "memfs": "^3.4.1",
+    "parse2-kmz": "^1.0.5",
+    "path-browserify": "^1.0.1",
+    "require": "^2.4.20",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "system": "^2.0.1"
+  },
+  "keywords": [],
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "description": ""
+}
